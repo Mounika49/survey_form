@@ -1,2 +1,2 @@
 # survey_form
-Survey Form designed using HTML and CSS
+Designed a Survey Form with Form Validations using HTML and CSS 
