@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>Work From Home(WFH) Feedback Survey</title>
+        <style>
+            body{
+                
+                width:100%;
+                height:auto;
+                color:var(--color-darkblue);
+                margin:0;
+                font-family:sans-serif;
+                line-height: 2;
+                text-align:center;
+                min-width:8px;
+                background-color: rgb(83, 203, 207);
+            }
+            @media only screen and (max-width:300px) {
+              body{
+                    font-size:0.5em;
+                    line-height:2em;
+                }
+                
+            }
+            #title{
+                color:rgb(51, 33, 15);
+                text-align: center;
+                position:center;
+            }
+            div{
+                margin-top:1em;
+                
+            }
+            #Survey-Form{
+              text-align: left;
+              border-radius:0.25rem;
+              background-color: white;
+              margin: 0 auto;
+              width: 70%;
+              padding:10px;
+              border: 1px solid rgb(148, 79, 79);
+            
+            
+              
+            }
+            label{
+                font-weight: bold;
+            }
+            #description{
+                position:center;
+              
+                font-size: 2.5em;
+            }
+            
+            [type='submit']{
+                margin:40px 100px 100px 40px;
+                color:black;
+                background-color:rgb(109, 230, 109);
+                border-radius:2px;
+                width:80px;
+                height:30px;
+                display:center;
+            }
+            [type='name']{
+                text-transform:uppercase;
+               
+            }
+            [type='email']{
+                text-transform:lowercase;
+    
+
+            }
+            [type='textarea']{
+                vertical-align: top;
+               
+
+                height: 5em;
+                /* To allow users to resize any textarea vertically
+   It works only on Chrome, Firefox and Safari */
+                resize: vertical;
+            }
+
+        </style>
+        
+    </head>
+    <body >
+
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"</script></script>
+        <h1 id="title">Survey-Form</h1>
+        <p id="description"> Work From Home(WFH) Feedback Survey</p>
+        <div>
+        <form id="survey-form" >
+            <!--Personal Details-->
+            <fieldset>
+           <label id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="name" required>
+           </input>
+           <br>
+           <label id="email-label">Email:</label><input type="email" id="email" placeholder="abc12@email.com" required><br>
+        </input>
+        <label id="number-label"  for="phone" >Phone Number:</label> 
+  <input autofocus="" type="number" name="number" min="5" max="12" id="number" class="input-field"
+        placeholder="Enter your number" required="">
+        
+        <br><label>Department</label>
+        <select id="dropdown">
+            <option>Human Resource</HR></option>
+            <option>Development</option>
+            <option>Testing</option>
+            <option>Marketing</option>
+            <option>Sales</option>
+            
+           
+            </select><br>
+            <!--Radio buttons-->
+
+            <label for="Gender">Gender</label>
+        <input type="radio" name="Gender" value="Male" Checked required>Male
+        <input type="radio" name="Gender" value="Female">Female
+        <input type="radio" name="Gender" value="Other">Other<br>
+        </fieldset>
+        <!--Feedback-->
+        <fieldset>
+        <label for="Experience">Are you Working From Home(WFH)?<br>
+        <input type="radio" name="Experience" value="yes" required checked>Yes
+        <input type="radio" name="Experience" value="no">No
+        <input type="radio" name="Experience" value="rare">rarely<br>
+
+        <label for="experience">Do you like WFH Experience?</label><br>
+        <input type="radio" name="experience" value="yes">Yes</input>
+        <input type="radio" name="experience" value="no">No</input>
+        <input type="radio" name="experience" value="Not bad">Not bad</input><br>
+    
+        <label for="experience">Which one you felt productive?</label><br>
+        <input type="radio" name="experience" value="Work From home">Work From home</input>
+        <input type="radio" name="experience" value="Work From Office">Work From Office</input><br>
+        
+        <label for="experience">How is WFH affected your perfomance?</label><br>
+        <input type="radio" name="experience" value="Improved">Improved</input>
+        <input type="radio"  name="experience" value="Deproved">Deproved</input>
+        <input type="radio" name="experience" value="Not Affected">Not Affected</input><br>
+        
+        <label for="label">What difficulty/problem is there to WFM?</label><br>
+        <input type="checkbox" name="label" value="Network Problem">Network Problem</input>
+        <input type="checkbox" name="label" value="Power Failure">Power Failure Problem</input>
+        <input type="checkbox" name="label" value="Timings">Timings</input><br>
+
+        <label for="experience">Did WFM increased stress ?</label><br>
+        <input type="radio" name="experience"  value="yes">Yes</input>
+        <input type="radio" name="experience" value="no">No</input>
+        <input type="radio" name="experience" value="partially increased">partially increased</input><br>
+        
+        
+     </fieldset>
+        <label>Any Comments/Suggestions</label><br>
+        <textarea rows="15" cols="30" placeholder="Comments"></textarea><br>
+        <input type="submit" value="submit" id="submit"></input>
+        
+
+            
+       
+        </form>
+        </div>
+    </body>
+</html>
